@@ -62,8 +62,11 @@ var peopleData = [
 // ...via a dead-simple implementation:
 var Treeize   = require('treeize');
 var people    = new Treeize();
-
 people.grow(peopleData);
+
+// or the simplest way:
+var Treeize   = require('treeize');
+var people    = new Treeize(peopleData);
 
 
 // ...into deep API-ready object graphs like this:
